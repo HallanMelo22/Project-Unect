@@ -12,18 +12,18 @@
 
 <body>
 	<header>
-		<a1 id="site-logo" href="index.html">
+		<a id="site-logo" href="index.html">
 			<img src="Logo_branca1.png">
-		</a1>
+		</a>
 		<h1>uTask 3.0</h1>
 		<button>
-			<div103 style=" position: absolute;width: 50px;height: 24px;right: 160px;top: 28px;justify-content: end;background: linear-gradient(90deg, #ffc93f 0%, #ffc93f 0.01%, #ffe03f 100%);border-radius: 50px;"></div103>
-			<div104 style="   position: absolute;width: 20px;height: 20px;right: 188px;top: 30px;background: #ffffff;border-radius: 100px;">
-				<a3 id="simb_light"><span class="material-icons-outlined">
+			<div id="box-light"></div>
+			<div id="circle-light">
+				<a id="simb_light"><span class="material-icons-outlined">
 						light_mode
 					</span>
-				</a3>
-			</div104>
+				</a>
+			</div>
 		</button>
 	</header>
 	<footer>
@@ -37,22 +37,23 @@
 			<pre>por <strong>Hallan.</strong></pre>
 		</h3>
 	</footer>
-	<div100 style="position: absolute;width: 620px;height: 119px;left: 160px;	top: 112px;background-color: #FFFFFF;	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.04);border-radius: 20px;"></div100>
-	<div101 style="position: absolute;width: 44px;height: 44px;left: 176px;top: 128px;background: #FFFCEE;border-radius: 50%"></div101>
-	<div102 style="position: absolute;width: 34px;height: 34px;left: 181px;top: 133px;background: #FFF5C0;border-radius: 50%;"></div102>
-
-	<a8 id="tips"><span class="material-icons-outlined">
+	<div id="frase-dia"></div>
+	<div id="amr-claro"></div>
+	<div id="amr-medio"></div>
+	<a id="tips"><span class="material-icons-outlined">
 			tips_and_updates
-		</span></a8>
+		</span></a>
 	<h4><strong>Frase do dia</strong></h4>
 	<p id="dica">Se você quer um pedacinho do paraíso, acredite em Deus. Mas se você <br> quer conquistar o mundo, acredite em você porque Deus já te deu tudo o <br>que você precisa para você vencer.</p>
+	<!---Caixa a Fazer---!-->
 	<h5>A fazer</h5>
 	<button id="add-button">
 		<div class="botao"><span id="adicionar" class="material-icons-outlined">
 				add</div>
 	</button>
-	<div4 id="cinza-1" style="position: absolute;display: flex; width: 293px;height: 337px;left: 160px;top: 301px;background:  #EEEEEE ;border-radius: 10px;">
-		<div2 id="br-1-1" style="position: absolute;display: flex;width: 253px;height: 74px;left: 20px;border:0px ;top: 20px;background: #FFFFFF;border-radius: 10px;">
+	<ul id="cinza-1">
+		<!---Caixa a Fazer-
+		<div id="br-1-1">
 			<h1><strong>Pagar conta de luz</strong></h1>
 			<h2>
 				<en>Ler descrição</en>
@@ -67,8 +68,8 @@
 			<a3 id="exclude"><span class="material-icons-outlined">
 					delete
 				</span></a3>
-			<!--Caixa do meio-->
-			<div8 style="position: absolute;display: flex;width: 253px;height: 116px;left: 0px;top: 88px;background-color: #FFFFFF ;border-radius: 10px;">
+			--Caixa do meio--
+			
 				<h1><strong>Fazer compras no mercado</strong></h1>
 				<a2 id="more_vert"><span class="material-icons-outlined">
 						more_vert
@@ -80,13 +81,13 @@
 						expand_less
 					</span></a>
 				<p>Comprar batata, cenoura, feijão, alho, arroz e pipoca. </p>
-				<div9 style="position: absolute;display: flex;width: 20px;height: 20px;left: 221px;top: 84px;background-color: #226ED8;border-radius: 20px;"><span class="material-icons-outlined">
+				<div id="update-button"><span class="material-icons-outlined">
 						navigate_next
 					</span>
-				</div9>
-			</div8>
-		</div2>
-		<div5 style="position: absolute;display: flex;left: 20px;right: 20px;top: 238px;bottom: 25px;background-color: #FFFFFF;border-radius: 10px;">
+				</div>
+			</div>
+		</div>
+		<div id="br-1-3">
 			<h1><strong>Fazer manicure</strong></h1>
 			<h2>
 				<en>Ler descrição</en>
@@ -101,18 +102,19 @@
 			<a2 id="expand_more"><span class="material-icons-outlined">
 					expand_more
 				</span></a2>
-			<div6 style="position: absolute;display: flex;left: 87.35%;right: 4.74%;top: 54.05%;bottom: 18.92%;background-color: #226ED8;border-radius: 20px;"><span class="material-icons-outlined">
+			<div id="update-button"><span class="material-icons-outlined">
 					navigate_next
 				</span>
-			</div6>
+				
+			</div>
 
-		</div5>
-		<div7 style="position: absolute;display: flex;width: 6px;height: 270px;left: 281px;top: 20px;background-color: #C4C4C4;border-radius: 20px;"></div7>
-
-	</div4>
+		</div>
+		<div id="scroll-bar"></div>
+--!-->
+	</ul>
 	<h6>Em andamento</h6>
-	<div9 style="position: absolute;display: flex;width: 293px;height: 337px;left: 493px;top: 302px;background-color: #EEEEEE ;border-radius: 10px;">
-		<div2 style="position: absolute;display: flex;width: 253px;height: 74px;left: 20px;border:0px #FFFFFF ;top: 20px;background-color: #FFFFFF;border-radius: 10px;">
+	<div id="in-progress">
+		<div id="br-2">
 			<h1><strong>Fazer manicure</strong></h1>
 			<a id="more_vert"><span class="material-icons-outlined">
 					more_vert
@@ -123,19 +125,19 @@
 			<a2 id="expand_more"><span class="material-icons-outlined">
 					expand_more
 				</span></a2>
-			<div3 style="position: absolute;display: flex;left: 87.35%;right: 4.74%;top: 54.05%;bottom: 18.92%;background-color: #226ED8;border-radius: 20px;"><span class="material-icons-outlined">
+			<div id="update-button"><span class="material-icons-outlined">
 					navigate_next
 				</span>
-			</div3>
-			<div4 style="box-sizing: border-box;position: absolute;display: flex;left: 77.08%;right: 15.02%;top: 54.05%;bottom: 18.92%;background-color: #FFFFFF ;border: 1px solid #226ED8;border-radius: 20px;;"><span class="material-icons-outlined">
+			</div>
+			<div id="go-back"><span class="material-icons-outlined">
 					navigate_before
 				</span>
-			</div4>
-		</div2>
-	</div9>
+			</div>
+		</div>
+	</div>
 	<h7> Feito</h7>
-	<div10 style="position: absolute;display: flex;width: 293px;height: 337px;left: 827px;top: 301px;background-color: #EEEEEE;border-radius: 10px;">
-		<div2 style="position: absolute;display: flex;width: 253px;height: 74px;left: 20px;border:0px #FFFFFF ;top: 20px;background-color: #FFFFFF;border-radius: 10px;">
+	<div id="done">
+		<div id="br-3">
 			<h1><strong>Fazer manicure</strong></h1>
 			<a id="more_vert"><span class="material-icons-outlined">
 					more_vert
@@ -146,16 +148,16 @@
 			<a2 id="expand_more"><span class="material-icons-outlined">
 					expand_more
 				</span></a2>
-			<div3 style="position: absolute;display: flex;left: 87.35%;right: 4.74%;top: 54.05%;bottom: 18.92%;background-color: #226ED8;border-radius: 20px;"><span class="material-icons-outlined">
+			<div id="return"><span class="material-icons-outlined">
 					replay
 				</span>
-			</div3>
-			<div4 style="box-sizing: border-box;display: flex;position: absolute;left: 77.08%;right: 15.02%;top: 54.05%;bottom: 18.92%;background-color: #FFFFFF;border: 1px solid #226ED8;border-radius: 20px;"><span class="material-icons-outlined">
+			</div>
+			<div id="go-back"><span class="material-icons-outlined">
 					navigate_before
 				</span>
-			</div4>
-		</div2>
-	</div10>
+			</div>
+		</div>
+	</div>
 	<div id="popup-wrapper">
 		<div class="popup">
 			<button id="close-b">
@@ -167,15 +169,17 @@
 			<div class="sublinho"></div>
 			<h2><strong>Titúlo *</strong></h2>
 			<div class="tit_new_task">
-				<h1>Enviar depoimento para o site da Unect</h1>
+				<input id="input-tit" type="text" placeholder="Titulo sobre a Task...">
 			</div>
 			<h3><strong>Descrição</strong></h3>
 			<div class="des_new_task">
-				<p>Eu achava que precisava entrar na Unect para<br>ser uma pessoa melhor, mas vi que precisava<br>ser uma pessoa melhor para entrar na Unect.</p>
+				<input id="input-des" type="text" placeholder="Detalhes sobre a Task...">
 			</div>
-			<div class="bot_azul">
-				<h1>Criar task</h1>
-			</div>
+			<button id="but_ntask" onclick="novatask()">
+				<div class="bot_azul">
+					<h1>Criar task</h1>
+				</div>
+			</button>
 		</div>
 	</div>
 </body>
