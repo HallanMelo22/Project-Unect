@@ -7,6 +7,12 @@
   text-decoration: none;
   background: local;
 }
+body {
+  background: #e5e5e5;
+}
+body .dark {
+  background: #222222;
+}
 header {
   width: 100%;
   height: 80px;
@@ -21,7 +27,23 @@ header {
   background-color: #226ed8;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
+header .dark {
+  background: #333333;
+}
 header #site-logo {
+  position: absolute;
+  width: 23.28px;
+  height: 40px;
+  left: 160px;
+  top: 20px;
+}
+header #site-logo .dark {
+  display: none;
+}
+header #site-logo-dark {
+  display: none;
+}
+header #site-logo-dark .dark {
   position: absolute;
   width: 23.28px;
   height: 40px;
@@ -45,6 +67,9 @@ header #simb_light {
   letter-spacing: -0.017em;
   color: #fbb910;
 }
+header #simb_light .dark {
+  display: none;
+}
 header h1 {
   width: 147px;
   height: 45px;
@@ -60,13 +85,19 @@ header h1 {
   text-align: center;
   color: #fafafa;
 }
+header h1 .dark {
+  color: #3867d6;
+}
 footer {
-  width: 100%;
   position: absolute;
+  width: 100%;
   height: 50px;
   left: 0px;
   bottom: 0px;
   background: #114fa7;
+}
+footer .dark {
+  background: #111111;
 }
 #scroll-bar {
   position: absolute;
@@ -89,6 +120,16 @@ footer {
   background: linear-gradient(90deg, #ffc93f 0%, #ffc93f 0.01%, #ffe03f 100%);
   border-radius: 50px;
 }
+#box-light .dark {
+  background: linear-gradient(
+    269.72deg,
+    #222222 0.23%,
+    #111111 0.24%,
+    #2e2e2e 99.76%
+  );
+  border-radius: 50px;
+}
+
 #circle-light {
   position: absolute;
   width: 20px;
@@ -97,6 +138,10 @@ footer {
   top: 30px;
   background: #ffffff;
   border-radius: 100px;
+}
+#circle-light {
+  right: 162px;
+  background: #fafafa;
 }
 footer h1 pre {
   position: absolute;
@@ -187,6 +232,9 @@ footer h3 pre {
   letter-spacing: -0.017em;
   color: #fbb910;
 }
+#tips .dark {
+  color: #ffffff;
+}
 h4 {
   position: absolute;
   width: 75px;
@@ -203,6 +251,9 @@ h4 {
   text-align: center;
   color: #141414;
 }
+h4 .dark {
+  color: #fafafa;
+}
 #dica {
   position: absolute;
   height: 63px;
@@ -216,6 +267,9 @@ h4 {
   display: flex;
   align-items: center;
   color: #141414;
+}
+#dica .dark {
+  color: #fafafa;
 }
 h5 {
   position: absolute;
@@ -232,6 +286,9 @@ h5 {
   align-items: center;
   color: #141414;
 }
+h5 .dark {
+  color: #fafafa;
+}
 button .botao {
   box-sizing: border-box;
   position: absolute;
@@ -241,6 +298,9 @@ button .botao {
   top: 263px;
   border: 2px solid #226ed8;
   border-radius: 40px;
+}
+button .botao .dark {
+  border: hsla(222, 66%, 53%, 1);
 }
 .botao #adicionar {
   position: absolute;
@@ -257,6 +317,9 @@ button .botao {
   align-items: center;
   color: #226ed8;
 }
+.botao #adicionar .dark {
+  color: #3867d6;
+}
 #frase-dia {
   position: absolute;
   width: 620px;
@@ -267,6 +330,10 @@ button .botao {
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
 }
+#frase-dia .dark {
+  background: #3d3d3d;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.04);
+}
 #amr-claro {
   position: absolute;
   width: 44px;
@@ -276,6 +343,10 @@ button .botao {
   background: #fffcee;
   border-radius: 50%;
 }
+#amr-claro .dark {
+  background: #515151;
+}
+
 #amr-medio {
   position: absolute;
   width: 34px;
@@ -285,6 +356,10 @@ button .botao {
   background: #fff5c0;
   border-radius: 50%;
 }
+#amr-medio .dark {
+  background: #3d3d3d;
+}
+
 #cinza1 {
   position: absolute;
   width: 293px;
@@ -296,7 +371,10 @@ button .botao {
   border-radius: 10px;
   overflow: auto;
 }
-.description {
+#cinza1 .dark {
+  background: #333333;
+}
+#box .description {
   position: inherit;
 
   width: 253px;
@@ -308,7 +386,10 @@ button .botao {
 
   border-radius: 10px;
 }
-.nodescription {
+#box .description .dark {
+  background: #3d3d3d;
+}
+#box {
   position: inherit;
   list-style: none;
   width: 253px;
@@ -321,6 +402,9 @@ button .botao {
 
   background: #ffffff;
   border-radius: 10px;
+}
+#box .dark {
+  background: #3d3d3d;
 }
 #cinza1 #box h1 {
   position: absolute;
@@ -336,7 +420,10 @@ button .botao {
   align-items: center;
   color: #141414;
 }
-.nodescription #l-desc {
+#cinza1 #box h1 .dark {
+  color: #fafafa;
+}
+#box #l-desc {
   position: inherit;
   width: 80px;
   height: 18px;
@@ -351,7 +438,10 @@ button .botao {
   line-height: 18px;
   color: #141414;
 }
-.description #l-desc {
+#box #l-desc .dark {
+  color: #fafafa;
+}
+#box #l-desc .description {
   display: none;
 }
 #box #more_vert {
@@ -368,24 +458,10 @@ button .botao {
   align-items: center;
   color: #141414;
 }
-/*
-#cinza-1 #box #more_vert {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 227px;
-  top: 14px;
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #226ed8;
+#box #more_vert .dark {
+  color: #fafafa;
 }
-*/
-.description #exp_less {
+#exp_less .description {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -399,10 +475,13 @@ button .botao {
   align-items: self-end;
   color: #002d6c;
 }
-.nodescription #exp_less {
+#exp_less .description .dark {
+  color: #5c9dff;
+}
+#exp_less {
   display: none;
 }
-.description #e-desc {
+#e-desc .description {
   position: inherit;
   width: 118px;
   height: 18px;
@@ -416,7 +495,10 @@ button .botao {
   align-items: center;
   color: #002d6c;
 }
-.nodescription #e-desc {
+#e-desc .description .dark {
+  color: #5c9dff;
+}
+#e-desc {
   display: none;
 }
 .description #desc {
@@ -433,11 +515,14 @@ button .botao {
   align-items: center;
   color: #141414;
 }
-.nodescription #desc {
+.description #desc .dark {
+  color: #fafafa;
+}
+#desc {
   display: none;
 }
 
-.nodescription #expand_more {
+#expand_more {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -451,10 +536,13 @@ button .botao {
   align-items: self-end;
   color: #141414;
 }
+#expand_more .dark {
+  color: #fafafa;
+}
 .description #expand_more {
   display: none;
 }
-.nodescription #update-button {
+#box #update-button {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -464,7 +552,10 @@ button .botao {
   background-color: #226ed8;
   border-radius: 20px;
 }
-.description #update-button {
+#box #update-button .dark {
+  background: #3867d6;
+}
+#box #update-button .description {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -473,6 +564,9 @@ button .botao {
   align-items: self-end;
   background-color: #226ed8;
   border-radius: 20px;
+}
+#box #update-button .description .dark {
+  background: #3867d6;
 }
 #update-button span {
   position: absolute;
@@ -487,6 +581,9 @@ button .botao {
   line-height: 16px;
   align-items: center;
   color: #ffffff;
+}
+#update-button span .dark {
+  color: #3d3d3d;
 }
 /*
 #br-1-1 h3 {
@@ -1140,7 +1237,7 @@ h7 {
   background: linear-gradient(90.35deg, #4890f5 0%, #226ed8 99.7%);
   border-radius: 80px;
 }
-#exp-det {
+#expdet {
   border: 0px;
   cursor: pointer;
 }
