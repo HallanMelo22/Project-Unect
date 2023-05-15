@@ -26,7 +26,7 @@ function novatask() {
   <a id="more_vert"><span class="material-icons-outlined">
 						more_vert
 					</span></a>
-          <button id="expdet" >
+          <button id="expdet">
           <h2 id="l-desc">
 				<en>Ler descrição</en>
 			  </h2> 
@@ -88,3 +88,35 @@ function changetheme() {
     localStorage.classList.add("dark");
   }
 }
+/*
+//const buttondesc = document.getElementById("exp-det");
+
+//buttondesc.addEventListener("click", showdetalhes);
+const showdetalhes = () => {
+const box = document.getElementById("box");
+  const ldesc = document.getElementById("l-desc");
+  const edesc = document.getElementById("e-desc");
+  const exp_less = document.getElementById("exp_less");
+  const expand_more = document.getElementById("expand_more");
+  const detail = document.getElementById("desc");
+  const update_button = document.getElementById("update-button");
+  if (box.className == "nodescription") {
+    box.className = "description";
+    ldesc.className = "description";
+    edesc.className = "description";
+    exp_less.className = "description";
+    expand_more.className = "description";
+    detail.className = "description";
+    update_button.className = "description";
+  } else {
+    box.className = "nodescription";
+    ldesc.className = "nodescription";
+    edesc.className = "nodescription";
+    exp_less.className = "nodescription";
+    expand_more.className = "nodescription";
+    detail.className = "nodescription";
+    update_button.className = "nodescription";
+     }
+};
+
+*/
