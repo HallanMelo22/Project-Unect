@@ -78,17 +78,7 @@ footer {
   background-color: #c4c4c4;
   border-radius: 20px;
 }
-#cinza-1 {
-  position: absolute;
-  width: 293px;
-  height: 337px;
-  left: 160px;
-  top: 301px;
-  margin: 6px;
-  background: #eeeeee;
-  border-radius: 10px;
-  overflow: auto;
-}
+
 #box-light {
   position: absolute;
   width: 50px;
@@ -295,24 +285,44 @@ button .botao {
   background: #fff5c0;
   border-radius: 50%;
 }
+#cinza1 {
+  position: absolute;
+  width: 293px;
+  height: 337px;
+  left: 160px;
+  top: 301px;
+  margin: 6px;
+  background: #eeeeee;
+  border-radius: 10px;
+  overflow: auto;
+}
 .description {
+  position: inherit;
+
   width: 253px;
   height: 116px;
   border: 0px;
   margin: 20px 20px;
   background-color: #ffffff;
+  align-items: center;
+
   border-radius: 10px;
 }
 .nodescription {
+  position: inherit;
   list-style: none;
   width: 253px;
   height: 74px;
   margin: 20px 20px 20px 20px;
   border: 0px;
+  align-items: center;
+
+  align-items: center;
+
   background: #ffffff;
   border-radius: 10px;
 }
-#cinza-1 #box h1 {
+#cinza1 #box h1 {
   position: absolute;
   width: 192px;
   height: 21px;
@@ -326,25 +336,25 @@ button .botao {
   align-items: center;
   color: #141414;
 }
-#cinza-1 .nodescription #l-desc {
-  position: absolute;
+.nodescription #l-desc {
+  position: inherit;
   width: 80px;
   height: 18px;
   margin-left: 12px;
   margin-top: 43px;
   font-family: "Poppins";
   font-style: normal;
-  display: flex;
+  align-items: self-start;
+
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
-  align-items: center;
   color: #141414;
 }
-#cinza-1 .description #l-desc {
+.description #l-desc {
   display: none;
 }
-#cinza-1 #box #more_vert {
+#box #more_vert {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -375,7 +385,8 @@ button .botao {
   color: #226ed8;
 }
 */
-#cinza-1 .description #exp_less {
+.description #exp_less {
+  position: absolute;
   width: 12px;
   height: 12px;
   left: 132px;
@@ -385,17 +396,18 @@ button .botao {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  align-items: center;
+  align-items: self-end;
   color: #002d6c;
 }
-#cinza-1 .nodescription #exp_less {
+.nodescription #exp_less {
   display: none;
 }
-#cinza-1 .description #e-desc {
+.description #e-desc {
+  position: inherit;
   width: 118px;
   height: 18px;
-  left: 12px;
-  top: 43px;
+  margin-left: 12px;
+  margin-top: 43px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
@@ -404,13 +416,10 @@ button .botao {
   align-items: center;
   color: #002d6c;
 }
-#cinza-1 .nodescription #e-desc {
+.nodescription #e-desc {
   display: none;
 }
-#cinza-1 .nodescription #desc {
-  display: none;
-}
-#cinza-1 .description #desc {
+.description #desc {
   position: absolute;
   width: 163px;
   height: 36px;
@@ -424,7 +433,11 @@ button .botao {
   align-items: center;
   color: #141414;
 }
-#cinza-1 .nodescription #expand_more {
+.nodescription #desc {
+  display: none;
+}
+
+.nodescription #expand_more {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -435,39 +448,38 @@ button .botao {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  align-items: center;
-  letter-spacing: -0.017em;
+  align-items: self-end;
   color: #141414;
 }
-#cinza-1 .description #expand_more {
+.description #expand_more {
   display: none;
 }
-#cinza-1 .nodescription #update-button {
+.nodescription #update-button {
   position: absolute;
   width: 20px;
   height: 20px;
-  margin-left: 221px;
-  margin-right: 12px;
-  margin-top: 40px;
-  margin-bottom: 14px;
+  left: 221px;
+  top: 40px;
+  align-items: self-end;
   background-color: #226ed8;
   border-radius: 20px;
 }
-#cinza-1 .description #update-button {
+.description #update-button {
   position: absolute;
   width: 20px;
   height: 20px;
-  margin-left: 221px;
-  margin-top: 84px;
+  left: 221px;
+  top: 84px;
+  align-items: self-end;
   background-color: #226ed8;
   border-radius: 20px;
 }
-#cinza-1 #box #update-button span {
+#update-button span {
   position: absolute;
   width: 16px;
   height: 16px;
-  margin-left: 2px;
-  margin-top: 2px;
+  left: 2px;
+  top: 2px;
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
@@ -476,6 +488,7 @@ button .botao {
   align-items: center;
   color: #ffffff;
 }
+/*
 #br-1-1 h3 {
   position: absolute;
   width: 38px;
@@ -653,7 +666,7 @@ button .botao {
   display: flex;
   align-items: center;
   color: #141414;
-}
+}*/
 h6 {
   position: absolute;
   width: 156px;
