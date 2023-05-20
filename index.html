@@ -15,34 +15,40 @@
 
 <body>
 	<header>
-		<a id="site-logo" href="index.html">
-			<img src="Logo_branca1.png">
-		</a>
-		<a id="site-logo-dark" href="index.html">
-			<img src="[Imagem] Logo branca (2).png">
-		</a>
-		<h1>uTask 3.0</h1>
-		<button id="escbut" onclick="changetheme()">
-			<div id="box-light"></div>
-			<div id="circle-light">
-				<a id="simb_light"><span class="material-icons-outlined">
-						light_mode
-					</span>
-				</a>
-			</div>
-		</button>
+		<div class="cabeç">
+			<a id="site-logo" href="index.html">
+				<img src="Logo_branca1.png">
+			</a>
+			<a id="site-logo-dark" href="index.html">
+				<img src="[Imagem] Logo branca (2).png">
+			</a>
+			<h1>uTask 3.0</h1>
+			<button id="escbut" onclick="changetheme()">
+				<div id="circle-light">
+					<a id="simb_light"><span class="material-icons-outlined">
+							light_mode
+						</span>
+					</a>
+				</div>
+			</button>
+		</div>
+
 	</header>
 
 	<footer>
-		<h1>
-			<pre> © Processo de Trainee <a id="lk_unct" href="https://unect.com.br"> Unect Jr. </a> 2022.1</pre>
-		</h1>
-		<h2>Feito com </h2> <span id="favorito" class="material-icons-outlined">
-			favorite
-		</span>
-		<h3>
-			<pre>por <strong>Hallan.</strong></pre>
-		</h3>
+		<div class="copyright">
+			<h1>
+				<pre> © Processo de Trainee <a id="lk_unct" href="https://unect.com.br"> Unect Jr. </a> 2022.1</pre>
+			</h1>
+		</div>
+		<div class="mensagem">
+			<h2>Feito com </h2> <span id="favorito" class="material-icons-outlined">
+				favorite
+			</span>
+			<h3>
+				<pre>por <strong>Hallan.</strong></pre>
+			</h3>
+		</div>
 	</footer>
 
 	<div id="frase-dia">
@@ -68,28 +74,33 @@
 
 	<!---Caixa a Fazer---!-->
 	<section class="tarefas">
-
 		<div class="a-fazer">
-			<h5>A fazer</h5>
-			<button id="add-button">
-				<div class="botao"><span id="adicionar" class="material-icons-outlined">
-						add</div>
-			</button>
-		</div>
+			<h5>A fazer
+				<button id="add-button">
+					<div class="botao"><span id="adicionar" class="material-icons-outlined">
+							add</div>
+				</button>
+			</h5>
+			<div id="cinza1">
 
+			</div>
+
+		</div>
 		<div class="andamento">
 			<h5>Em andamento</h5>
-
+			<div id="cinza1">
+			</div>
 		</div>
 
 		<div class="feito">
-			<h7> Feito</h7>
+			<h5> Feito</h5>
+			<div id="cinza1">
 
+			</div>
 		</div>
 
 		<div class="ativitys">
-			<ul id="cinza1">
-				<!---Caixa a Fazer-
+			<!---Caixa a Fazer-
 			<div id="br-1-1">
 				<h1><strong>Pagar conta de luz</strong></h1>
 				<h2>
@@ -148,9 +159,7 @@
 			</div>
 			<div id="scroll-bar"></div>
 	--!-->
-			</ul>
-			<div id="in-progress">
-				<div id="br-2">
+			<!---Caixa a Fazer-	<div id="br-2">
 					<h1><strong>Fazer manicure</strong></h1>
 					<a id="more_vert"><span class="material-icons-outlined">
 							more_vert
@@ -169,10 +178,9 @@
 							navigate_before
 						</span>
 					</div>
-				</div>
-			</div>
+				</div>--->
 
-			<div id="done">
+			<!---Caixa a Fazer-
 				<div id="br-3">
 					<h1><strong>Fazer manicure</strong></h1>
 					<a id="more_vert"><span class="material-icons-outlined">
@@ -192,8 +200,7 @@
 							navigate_before
 						</span>
 					</div>
-				</div>
-			</div>
+				</div>-->
 		</div>
 	</section>
 
