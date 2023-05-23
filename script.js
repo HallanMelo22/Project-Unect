@@ -1,10 +1,21 @@
+/*
 const mostre = () => {
   const popup = document.getElementById("popup-wrapper");
+  const swipe = document.querySelector(".swiper-slide");
+  const swipe2 = document.querySelector(".swiper");
+
+  swipe.classList.add("mostrar");
+  swipe2.classList.add("mostrar");
   popup.classList.add("mostrar");
 };
-
+*/
 const naomostre = () => {
   const popup = document.getElementById("popup-wrapper");
+  const swipe = document.querySelector(".swiper-slide");
+  const swipe2 = document.querySelector(".swiper");
+
+  swipe.classList.remove("mostrar");
+  swipe2.classList.remove("mostrar");
   popup.classList.remove("mostrar");
 };
 
@@ -78,7 +89,7 @@ function novatask() {
 function togglebox(a) {
   a.classList.toggle("description");
 }
-/*
+/* Tentativas para mostrar a descrição de cada item
 const element = document.getElementById("expdet");
 element.addEventListener("click", eliminatedesc());
 
@@ -92,22 +103,6 @@ function eliminatedesc() {
 function togglebox() {
   const box = document.getElementById("box");
   box.classList.toggle("description");
-}
-*/
-function toggledark() {
-  var algo = document.getElementsByTagName("body");
-  algo.classList.add("dark");
-}
-
-function changetheme() {
-  console.log("oi");
-  localStorage.removeItem("dark");
-  toggledark();
-  var algo = document.getElementById("body");
-
-  if (algo.classList.contains("dark")) {
-    localStorage.classList.add("dark");
-  }
 }
 
 var coll = document.getElementsById("collapsible");
@@ -124,7 +119,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
+*/
 //const buttondesc = document.getElementById("exp-det");
 
 //buttondesc.addEventListener("click", showdetalhes);
@@ -154,3 +149,32 @@ const showdetalhes = () => {
     update_button.classList.remove("description");
   }
 };
+/* Swiper integrando no desktop no  mobile preferi nao colocar
+var Swiper = new Swiper(".swiper", {
+  effect: "slide",
+  slidesPerView: 3,
+  spaceBetween: 0,
+  loop: true,
+  noSwiping: false,
+  allowSlidePrev: false,
+  allowSlideNext: false,
+  speed: 600,
+  autoplay: false,
+  keyboard: false,
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+      noSwiping: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+    },
+
+    992: {
+      slidesPerView: 3,
+      noSwiping: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+    },
+  },
+});
+*/
